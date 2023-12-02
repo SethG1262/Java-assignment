@@ -94,14 +94,14 @@ if (durationButton){
     durationButton.addEventListener("click", changeDuration);
 }
 function changeDuration(){
-    var durationTextSpan = document.getElementById("duration-text")
+    var durationTextSpan = document.getElementById("duration-text");
     var userDuration = prompt("How long will you rent? ");
     if(userDuration !== null){
-        userIntput = parseInt(duration,10);   
+        userIntput = parseInt(userDuration,10);   
     }
     if (!isNaN(duration)){
-        durationTextSpan.innerHTML = userDuration;
-        duration = userDuration;
+        durationTextSpan.innerHTML = userInput;
+        duration = userInput;
         recalculate();
     }
 }
