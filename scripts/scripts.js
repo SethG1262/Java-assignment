@@ -97,9 +97,7 @@ function changeDuration(){
     var durationTextSpan = document.getElementById("duration-text");
     var userDuration = prompt("How long will you rent? ");
     if(userDuration !== null){
-        userIntput = parseInt(userDuration,10);   
-    }
-    if (!isNaN(duration)){
+        var userInput = parseInt(userDuration,10);
         durationTextSpan.innerHTML = userInput;
         duration = userInput;
         recalculate();
